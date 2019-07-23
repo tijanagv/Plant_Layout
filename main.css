@@ -27,9 +27,13 @@ hr {
 }
 
 header {
-  height: 80px;
+  height: 10vh;
   background-color: #ebebeb;
 }
+
+/* #navigation, #logo {
+  display: none;
+} */
 
 /* Section One */
 
@@ -146,6 +150,10 @@ input {
   border: 1px solid rgb(61, 60, 60);
 }
 
+.btn:hover {
+  border: 1px solid rgb(2, 61, 2);
+}
+
 /* Footer */
 
 footer {
@@ -154,7 +162,9 @@ footer {
 
 footer nav {
   padding: 20px 0;
+  
 }
+
 nav a {
   display: block;
   height: 35px;
@@ -170,9 +180,10 @@ nav a {
   padding-bottom: 30px;
   display: flex;
   justify-content: center;
+  
 }
 
-i {
+.social a {
   background-color: rgb(61, 60, 60);
   color: #fff;
   padding: 8px 5px;
@@ -181,16 +192,55 @@ i {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  
 }
 
 .social a:hover {
-  background-color: rgb(3, 59, 3);
+  background-color: rgb(2, 61, 2);
   transform: rotate(25deg);
 }
 
 /* Responsive Design Break PointS */
 
 @media screen and (min-width: 800px) {
+
+  p {
+    font-size: 20px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    padding: 10px;
+  }
+
+  nav a, #logo {   
+    padding: 25px;
+    letter-spacing: 2px;
+    color: rgb(61, 60, 60);
+  }
+
+  nav a {
+    font-size: 22px;
+    padding-top: 10px;
+  }
+
+  #logo {
+    display: inline-block;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .border {
+    border: 2px solid rgb(61, 60, 60);
+  }
+  /* End of Header Section */
 
   .one {
     background-position: top left;
@@ -208,6 +258,17 @@ i {
   }
   .btn {
     width: 15%;
+  }
+
+  footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social {
+    padding: 25px;
   }
 }
 
