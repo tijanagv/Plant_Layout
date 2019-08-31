@@ -31,6 +31,44 @@ header {
   background-color: #ebebeb;
 }
 
+#logo {
+  display: none;
+}
+
+#hamburger-menu {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+#hamburger-menu img {
+  height: 35px;
+}
+
+#navigation {
+  /* width: 100%; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 10vh;
+  display: none;
+}
+
+#navigation a {
+  padding: 15px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#navigation a:hover {
+  color: rgb(6, 141, 6);
+}
+
+.show {
+  display: flex;
+}
+
 /* #navigation, #logo {
   display: none;
 } */
@@ -38,15 +76,16 @@ header {
 /* Section One */
 
 .one {
-  height: 75vh;
+  height: 100vh;
   background: url(./img/plant-1.jpg);
   background-size: cover;
-  background-position: bottom left;
+  background-position: 20% 80%;
   text-align: center; 
   
 }
 
 .one h1 {
+  padding-top: 200px;
   text-transform: uppercase;
   font-size: 65px;
   color: rgb(61, 60, 60);
@@ -68,7 +107,7 @@ header {
 }
 
 .img-1, .img-2, .img-3 {
-  height: 60%;
+  height: 55%;
   background-size: cover;
 }
 
@@ -98,6 +137,7 @@ header {
 .text p {
   padding: 20px 0;
 }
+
 /* Section About */
 
 #about {
@@ -160,20 +200,18 @@ footer {
   height: 20vh;
 }
 
-footer nav {
-  padding: 20px 0;
-  
-}
-
-nav a {
+.footer-nav a {
+  padding: 20px 0; 
   display: block;
-  height: 35px;
   width: 100%;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
-  margin: 10px 0;
+  color: #000; 
+}
+
+.footer-nav a:hover {
+  color: rgb(6, 141, 6);
 }
 
 .social {
@@ -202,7 +240,7 @@ nav a {
 
 /* Responsive Design Break PointS */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
 
   p {
     font-size: 20px;
@@ -214,12 +252,17 @@ nav a {
     padding: 20px;
   }
 
-  nav {
+  #hamburger-menu {
+    display: none;
+  }
+
+  #navigation {
     display: flex;
+    flex-direction: row;
     padding: 10px;
   }
 
-  nav a, #logo {   
+  #navigation a, #logo {   
     padding: 25px;
     letter-spacing: 2px;
     color: rgb(61, 60, 60);
@@ -227,7 +270,6 @@ nav a {
 
   nav a {
     font-size: 22px;
-    padding-top: 10px;
   }
 
   #logo {
@@ -240,11 +282,8 @@ nav a {
   .border {
     border: 2px solid rgb(61, 60, 60);
   }
-  /* End of Header Section */
 
-  .one {
-    background-position: top left;
-  }
+  /* End of Header Section */
 
   .img-3 {
     background-position: top 500px;
@@ -262,9 +301,20 @@ nav a {
 
   footer {
     height: 10vh;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .footer-nav a {
+    padding: 15px;
   }
 
   .social {
@@ -283,7 +333,7 @@ nav a {
 
   .one {
     height: 100vh;
-    padding-top: 80px;
+    /* padding-top: 80px; */
   }
   
   .one h1 {
@@ -333,7 +383,4 @@ nav a {
 #subscribe {
   padding: 100px;
 }
-  
-
-
 }
