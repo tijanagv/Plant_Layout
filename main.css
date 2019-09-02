@@ -50,8 +50,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 10vh;
+  /* position: relative;
+  top: 10vh; */
   display: none;
 }
 
@@ -69,9 +69,6 @@ header {
   display: flex;
 }
 
-/* #navigation, #logo {
-  display: none;
-} */
 
 /* Section One */
 
@@ -96,15 +93,13 @@ header {
 /* Section Two - Boxes */
 
 #two {
+  height: 1200px;
   text-align: center;
   margin: 10px 0;
   padding: 50px 20px;
   background-color: #ebebeb; 
 }
 
-.box {
-  height: 800px;
-}
 
 .img-1, .img-2, .img-3 {
   height: 55%;
@@ -125,11 +120,11 @@ header {
 
 .text {
   background-color: #fff;
-  height: 40%;
+  /* height: 45%; */
   padding: 30px;
   position: relative;
   bottom: 10px;
-  padding: 30px;
+  /* padding: 30px; */
   line-height: 1.5;
   text-align: justify;
 }
@@ -249,7 +244,8 @@ footer {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+
   }
 
   #hamburger-menu {
@@ -268,8 +264,12 @@ footer {
     color: rgb(61, 60, 60);
   }
 
-  nav a {
+  #navigation a {
     font-size: 22px;
+  }
+
+  #navigation a:hover {
+    color: rgb(6, 141, 6);
   }
 
   #logo {
@@ -284,6 +284,19 @@ footer {
   }
 
   /* End of Header Section */
+
+  #two {
+    padding: 150px 0 250px 0;
+  }
+
+  #two .wrap {
+    display: flex;
+  }
+
+  #two .box {
+    padding: 0 20px;
+  }
+
 
   .img-3 {
     background-position: top 500px;
