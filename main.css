@@ -23,7 +23,7 @@ h2 {font-size: 27px;}
 
 hr {
   width: 10%;
-  margin: 15px auto;
+  margin: 30px auto;
 }
 
 header {
@@ -45,20 +45,26 @@ header {
   height: 35px;
 }
 
-#navigation {
-  /* width: 100%; */
+header nav {
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* position: relative;
-  top: 10vh; */
+  position: relative;
+  top: 10vh;
   display: none;
+   
 }
 
 #navigation a {
+  width: 100%;
   padding: 15px 0;
   text-decoration: none;
   text-transform: uppercase;
+  color: rgb(61, 60, 60);
+  font-size: 17px;
+  border-bottom: 1px solid;
+  text-align: center;
 }
 
 #navigation a:hover {
@@ -67,6 +73,7 @@ header {
 
 .show {
   display: flex;
+ 
 }
 
 
@@ -82,7 +89,7 @@ header {
 }
 
 .one h1 {
-  padding-top: 200px;
+  padding-top: 170px;
   text-transform: uppercase;
   font-size: 65px;
   color: rgb(61, 60, 60);
@@ -93,16 +100,30 @@ header {
 /* Section Two - Boxes */
 
 #two {
-  height: 1200px;
+  height: 200vh;
   text-align: center;
   margin: 10px 0;
   padding: 50px 20px;
   background-color: #ebebeb; 
 }
 
+.wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  height: 30%;
+  display: inline-block;
+  background-color: #fff;
+  margin: 5px;
+}
+
 
 .img-1, .img-2, .img-3 {
   height: 55%;
+  width: 100%;
   background-size: cover;
 }
 
@@ -119,24 +140,22 @@ header {
 }
 
 .text {
-  background-color: #fff;
-  /* height: 45%; */
-  padding: 30px;
+  height: 45%;
+  /* padding: 90px 30px; */
   position: relative;
   bottom: 10px;
-  /* padding: 30px; */
   line-height: 1.5;
-  text-align: justify;
+  text-align: center;
 }
 
 .text p {
-  padding: 20px 0;
+  padding: 25px;
 }
 
 /* Section About */
 
 #about {
-  height: 1000px;
+  height: 170vh;
 }
 
 .about-img {
@@ -164,7 +183,7 @@ header {
   text-align: center; 
 }
 
-.subscribe p {
+#subscribe p {
   padding: 20px 0;
 }
 
@@ -176,17 +195,20 @@ input {
   border: 1px solid rgb(223, 219, 219);
 }
 
-.btn {
+#subscribe .btn {
   width: 70%;
   height: 34px;
   font-family:  'Questrial', sans-serif;
   letter-spacing: 4px;
   text-transform: uppercase;
   border: 1px solid rgb(61, 60, 60);
+  cursor: pointer;
 }
 
-.btn:hover {
-  border: 1px solid rgb(2, 61, 2);
+#subscribe .btn:hover {
+  border: 2px solid rgb(2, 61, 2);
+  color: rgb(2, 61, 2);
+  font-weight: 500;
 }
 
 /* Footer */
@@ -195,7 +217,7 @@ footer {
   height: 20vh;
 }
 
-.footer-nav a {
+footer nav a {
   padding: 20px 0; 
   display: block;
   width: 100%;
@@ -205,7 +227,7 @@ footer {
   color: #000; 
 }
 
-.footer-nav a:hover {
+footer nav a:hover {
   color: rgb(6, 141, 6);
 }
 
@@ -234,7 +256,7 @@ footer {
 }
 
 /* Responsive Design Break PointS */
-
+/* 
 @media screen and (min-width: 768px) {
 
   p {
@@ -284,7 +306,7 @@ footer {
   }
 
   /* End of Header Section */
-
+/*  
   #two {
     padding: 150px 0 250px 0;
   }
@@ -340,19 +362,19 @@ footer {
 
 @media screen and (min-width: 1000px) {
 
-  h3 {font-size: 30px;}
+  h3 {font-size: 30px;} */
 
   /* Section One */
-
+/*
   .one {
     height: 100vh;
-    /* padding-top: 80px; */
+    /* padding-top: 80px; 
   }
   
   .one h1 {
     font-size: 100px;
   }
- /* Section Two - Boxes */
+ /* Section Two - Boxes 
 
  #two {
   padding-top: 100px;
@@ -375,7 +397,7 @@ footer {
   background-color: #fff;
 }
 
-/* About Section */
+/* About Section 
 
 #about {
   display: flex;
@@ -391,9 +413,10 @@ footer {
   padding: 250px 50px;
 }
 
-/* Subscribe Section */
+/* Subscribe Section 
 
 #subscribe {
   padding: 100px;
 }
 }
+*/
