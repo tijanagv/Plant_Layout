@@ -17,7 +17,7 @@ h3, h2 {
   font-weight: 200;
 }
 
-h3 {font-size: 19px;}
+h3 {font-size: 20px;}
 
 h2 {font-size: 27px;}
 
@@ -80,7 +80,7 @@ header nav {
 /* Section One */
 
 .one {
-  height: 100vh;
+  height: 150vh;
   background: url(./img/plant-1.jpg);
   background-size: cover;
   background-position: 20% 80%;
@@ -89,7 +89,7 @@ header nav {
 }
 
 .one h1 {
-  padding-top: 170px;
+  padding-top: 150px;
   text-transform: uppercase;
   font-size: 65px;
   color: rgb(61, 60, 60);
@@ -115,7 +115,7 @@ header nav {
 
 .box {
   height: 30%;
-  display: inline-block;
+  display: block;
   background-color: #fff;
   margin: 5px;
 }
@@ -149,7 +149,7 @@ header nav {
 }
 
 .text p {
-  padding: 25px;
+  padding: 0 15px;
 }
 
 /* Section About */
@@ -256,18 +256,31 @@ footer nav a:hover {
 }
 
 /* Responsive Design Break PointS */
-/* 
+
+@media screen and (min-width: 600px) {
+  p {font-size: 20px;}
+
+  .img-1, .img-2, .img-3 {
+    height: 65%;
+  }
+
+  .text {
+    height: 35%;
+  }
+
+  #about {height: 120vh;}
+}
+/* na ovoj sirini resize-ovati i submit btn */
+
+ 
 @media screen and (min-width: 768px) {
 
-  p {
-    font-size: 20px;
-  }
+  h3 {font-size: 25px;}
 
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   #hamburger-menu {
@@ -290,8 +303,16 @@ footer nav a:hover {
     font-size: 22px;
   }
 
+  #navigation a:nth-child(-n+2) {
+    border-bottom: none;
+  }
+
+  #navigation a:last-child {
+    border-bottom: 2px solid rgb(61, 60, 60);
+  }
+
   #navigation a:hover {
-    color: rgb(6, 141, 6);
+    color: rgb(6, 141, 6); 
   }
 
   #logo {
@@ -305,8 +326,11 @@ footer nav a:hover {
     border: 2px solid rgb(61, 60, 60);
   }
 
-  /* End of Header Section */
-/*  
+   /* End of Header Section */
+
+  .one h1 {font-size: 80px;}
+
+ 
   #two {
     padding: 150px 0 250px 0;
   }
@@ -327,6 +351,8 @@ footer nav a:hover {
     background-position: left;
   }
 
+  /* srediti boxeve fleksom */
+
   input {
     width: 30%;
   }
@@ -338,14 +364,14 @@ footer nav a:hover {
     height: 10vh;
     padding: 20px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
   .footer-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .footer-nav a {
@@ -359,7 +385,7 @@ footer nav a:hover {
 
 
 
-
+/*
 @media screen and (min-width: 1000px) {
 
   h3 {font-size: 30px;} */
