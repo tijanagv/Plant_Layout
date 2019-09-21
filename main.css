@@ -73,7 +73,6 @@ header nav {
 
 .show {
   display: flex;
- 
 }
 
 
@@ -280,12 +279,21 @@ footer nav a:hover {
     display: none;
   }
 
-  #navigation {
+  .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    top: 15px;
+    
+
+  } 
+
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    top: 5px;
+  
   }
 
   #navigation a, #logo {   
@@ -295,7 +303,7 @@ footer nav a:hover {
   }
 
   #navigation a {
-    width: 30%;
+    width: 31%;
     font-size: 19px;
   }
 
@@ -391,6 +399,7 @@ footer nav a:hover {
   h3 {font-size: 30px;} 
 
   #navigation a {
+    width: 25%;
     font-size: 22px;
   }
 
@@ -417,7 +426,7 @@ footer nav a:hover {
   justify-content: center;
   align-items: center;
   margin: 50px 0;  
-  padding: 0 220px;
+  padding: 0 100px;
 }
 
 .box {
@@ -456,7 +465,7 @@ footer nav a {
 }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1300px) {
   #navigation a {
     width: 20%;
     font-size: 25px;
