@@ -141,7 +141,6 @@ header nav {
 
 .text {
   height: 45%;
-  /* padding: 90px 30px; */
   position: relative;
   bottom: 10px;
   line-height: 1.5;
@@ -199,6 +198,7 @@ input {
   width: 70%;
   height: 34px;
   font-family:  'Questrial', sans-serif;
+  font-size: 17px;
   letter-spacing: 4px;
   text-transform: uppercase;
   border: 1px solid rgb(61, 60, 60);
@@ -270,18 +270,11 @@ footer nav a:hover {
 
   #about {height: 120vh;}
 }
-/* na ovoj sirini resize-ovati i submit btn */
 
  
 @media screen and (min-width: 768px) {
 
   h3 {font-size: 25px;}
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   #hamburger-menu {
     display: none;
@@ -290,17 +283,20 @@ footer nav a:hover {
   #navigation {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 10px;
+    top: 15px;
   }
 
   #navigation a, #logo {   
-    padding: 25px;
+    padding: 20px;
     letter-spacing: 2px;
     color: rgb(61, 60, 60);
   }
 
   #navigation a {
-    font-size: 22px;
+    width: 30%;
+    font-size: 19px;
   }
 
   #navigation a:nth-child(-n+2) {
@@ -332,17 +328,22 @@ footer nav a:hover {
 
  
   #two {
+    height: 100vh;
     padding: 150px 0 250px 0;
+  }
+
+
+  #two .box {
+    display: inline-block;
+    height: 100%;
+    width: 30%;
   }
 
   #two .wrap {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
-
-  #two .box {
-    padding: 0 20px;
-  }
-
 
   .img-3 {
     background-position: top 500px;
@@ -351,13 +352,13 @@ footer nav a:hover {
     background-position: left;
   }
 
-  /* srediti boxeve fleksom */
+/* End of Article Section */
 
   input {
     width: 30%;
   }
-  .btn {
-    width: 15%;
+  #subscribe .btn {
+    width: 30%;
   }
 
   footer {
@@ -385,22 +386,26 @@ footer nav a:hover {
 
 
 
-/*
 @media screen and (min-width: 1000px) {
 
-  h3 {font-size: 30px;} */
+  h3 {font-size: 30px;} 
+
+  #navigation a {
+    font-size: 22px;
+  }
 
   /* Section One */
-/*
+
   .one {
     height: 100vh;
-    /* padding-top: 80px; 
   }
   
   .one h1 {
     font-size: 100px;
+    padding-top: 200px;
   }
- /* Section Two - Boxes 
+
+ /* Section Two - Boxes */
 
  #two {
   padding-top: 100px;
@@ -412,10 +417,11 @@ footer nav a:hover {
   justify-content: center;
   align-items: center;
   margin: 50px 0;  
+  padding: 0 220px;
 }
 
 .box {
-  height: 1000px;
+  height: 100%;
   margin: 0 10px; 
 }
 
@@ -423,7 +429,7 @@ footer nav a:hover {
   background-color: #fff;
 }
 
-/* About Section 
+/* About Section */
 
 #about {
   display: flex;
@@ -439,10 +445,20 @@ footer nav a:hover {
   padding: 250px 50px;
 }
 
-/* Subscribe Section 
+/* Subscribe Section */
 
 #subscribe {
   padding: 100px;
 }
+
+footer nav a {
+  font-size: 20px;
 }
-*/
+}
+
+@media screen and (min-width: 1500px) {
+  #navigation a {
+    width: 20%;
+    font-size: 25px;
+  }
+}
